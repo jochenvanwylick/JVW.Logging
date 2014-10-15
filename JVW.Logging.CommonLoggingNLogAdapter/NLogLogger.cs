@@ -19,7 +19,7 @@
 
         public NLogLogger(Type type)
         {
-            this.log = NLog.LogManager.GetLogger(type.Name, type);
+            this.log = NLog.LogManager.GetLogger(type.FullName);
         }
 
         public void Trace(object message)
