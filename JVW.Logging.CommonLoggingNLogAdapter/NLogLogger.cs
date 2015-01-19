@@ -1,12 +1,8 @@
 ﻿namespace JVW.Logging.CommonLoggingNLogAdapter
 {
     using System;
-    using System.Runtime.Remoting.Messaging;
 
     using Common.Logging;
-
-    using NLog;
-    using NLog.Targets.Wrappers;
 
     public class NLogLogger : ILog
     {
@@ -406,5 +402,23 @@
         public bool IsInfoEnabled { get; private set; }
 
         public bool IsWarnEnabled { get; private set; }
+
+        public IVariablesContext GlobalVariablesContext
+        {
+            get
+            {
+                // Not supported
+                throw new NotImplementedException();
+            }
+        }
+
+        public IVariablesContext ThreadVariablesContext
+        {
+            get
+            {
+                // Not supported
+                throw new NotImplementedException();
+            }
+        }
     }
 }
