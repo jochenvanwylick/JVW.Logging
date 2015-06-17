@@ -20,7 +20,7 @@
         }
 
         [TestMethod]
-        public void TestMethod1()
+        public void TryAllTestMethods()
         {
             const string TestMessage = "This is testmessage";
             const string Format = "This is a testmessage with placeholder {0}";
