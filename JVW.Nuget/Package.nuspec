@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>JVW.Logging.CommonLoggingNLogAdapter</id>
+    <version>1.0.4</version>
+    <authors>Jochen van Wylick</authors>
+    <owners>Jochen van Wylick</owners>
+    <projectUrl>https://github.com/jochenvanwylick/JVW.Logging</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NLog adapter for Common.Logging that works with the latest version of Common.Logging and NLog</description>
+    <releaseNotes>Updated library to depend on latest versions of NLog and Common.Logging</releaseNotes>
+    <copyright>Copyright 2016</copyright>
+    <tags>Commong.Logging NLog</tags>
+    <dependencies>
+      <dependency id="Common.Logging" version="3.3.1" />
+      <dependency id="Common.Logging.Core" version="3.3.1" />
+      <dependency id="NLog" version="4.3.11" />
+    </dependencies>
+  </metadata>
+</package>
