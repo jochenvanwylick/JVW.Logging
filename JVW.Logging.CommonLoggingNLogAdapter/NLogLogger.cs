@@ -25,7 +25,7 @@
 
         public void Trace(object message, Exception exception)
         {
-            this.log.Trace(message: message.ToString(), exception: exception);
+            this.log.Trace(exception, message.ToString());
         }
 
         public void TraceFormat(string format, params object[] args)
